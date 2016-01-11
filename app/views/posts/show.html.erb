@@ -1,0 +1,23 @@
+<h2>Post <small><%= action_name %></small></h2>
+<fieldset>
+  <legend>Post#<%= @post.id %></legend>
+  <p>
+    <strong>Title:</strong>
+    <%= @post.title %>
+  </p>
+  <p>
+    <strong>Content:</strong>
+    <%= @post.content %>
+  </p>
+</fieldset>
+<div class="text-right">
+  <%= link_to 'Edit', edit_post_path(@post), class:'btn btn-default' %>
+  <%= link_to 'Back', posts_path, class:'btn btn-default' %>
+</div>
+<div id="comments">
+  <h2><%= pluralize @post.comments.count, "Comment" %></h2>
+  <ul>
+    <%= render @post.comments %>
+  </ul>
+  <%= render "comments/form", comment: @post.comments.build %>
+</div>

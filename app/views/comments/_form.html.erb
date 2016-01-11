@@ -1,0 +1,4 @@
+<%= simple_form_for [comment.post, comment], remote: true do |f| %>
+  <%= f.input :content, label: 'Add a comment', input_html: { rows: 5 } %>
+  <%= f.button :submit, class: 'pull-right' %>
+<% end %>
