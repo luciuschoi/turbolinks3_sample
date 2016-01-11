@@ -5,6 +5,7 @@ ruby '2.3.0'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', github: "rails/rails" 
