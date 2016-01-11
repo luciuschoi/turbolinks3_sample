@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
+
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
